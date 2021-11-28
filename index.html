@@ -11,7 +11,59 @@
 </head>
 <body>
   <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm p-5 my-auto">
+        <h1>PIZZA PLANET</h1>
 
+        <div>
+          <div class="p-3">
+            <label for="size">Size:</label>
+            <select class="form-control" id="size" name="size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+
+          <div class="p-3">
+            <label for="crust">Crust:</label>
+            <select class="form-control" id="crust" name="crust">
+              <option value="crispy">Crispy</option>
+              <option value="stuffed">Stuffed</option>
+              <option value="gluten-free">Gluten Free</option>
+            </select>
+          </div>
+
+          <div class="p-3">
+            <label for="toppings">Toppings:</label>
+            <select class="form-control" name="toppings" id="toppings" multiple>
+              <option value="mushroom">Mushroom</option>
+              <option value="bacon">Bacon</option>
+              <option value="sausage">Sausage</option>
+              <option value="brocolli">Brocolli</option>
+            </select>
+            <div class="form-text">
+              Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.
+            </div>
+          </div>
+
+          <div class="p-3">
+            <label for="quantity">Number of Pizzas:</label>
+            <input type="text" class="form-control" name="quantity" id="quantity">
+            <div class="form-text">
+              Please type in the number of pizzas you'd like to order.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm p-5 my-auto">
+        <h3>Results</h3>
+        <div id="results">
+
+        </div>
+      </div>
+    </div>
   </div>
   
   <!-- JQuery -->
