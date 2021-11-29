@@ -24,5 +24,5 @@ https://mohraf.github.io/pizza-planet/
 ## Support and contact details
 - amosokello04@gmail.com
 ### License
-This is under the [MIT](LICENSE) license
+This is under the [MIT](LICENSE) license,
 Copyright (c) 2021 **Amos Okello**
