@@ -40,8 +40,10 @@ $("#submit").on('click', () => {
   let quantity = Number($('#quantity').val());
   let delivery = $('#delivery').val();
   let deliveryCost;
+  let toppingsCost = 0;
+  let totalCost;
 
-  if (delivery != ""){
+  if (delivery !== ""){
     deliveryCost = 100;
   }
   else {
@@ -50,5 +52,58 @@ $("#submit").on('click', () => {
 
   let myOrder = new Order(size, crust, toppings, quantity, deliveryCost);
 
-  console.log(myOrder);
+  alert("You will be charged Ksh " + deliveryCost + " for Delivery");
+
+  if(size == "small") {
+    if(toppings.includes("mushroom")){
+      toppingsCost += toppingsSmall.mushroom;
+    }
+    if(toppings.includes("bacon")){
+      toppingsCost += toppingsSmall.bacon;
+    }
+    if(toppings.includes("sausage")){
+      toppingsCost += toppingsSmall.sausage;
+    }
+    if(toppings.includes("brocolli")){
+      toppingsCost += toppingsSmall.brocolli;
+    }
+
+    totalCost = (pizzaPrices.small + toppingsCost + deliveryCost) * quantity;
+  } else if (size == "medium") {
+    if(toppings.includes("mushroom")){
+      toppingsCost += toppingsSmall.mushroom;
+    }
+    if(toppings.includes("bacon")){
+      toppingsCost += toppingsSmall.bacon;
+    }
+    if(toppings.includes("sausage")){
+      toppingsCost += toppingsSmall.sausage;
+    }
+    if(toppings.includes("brocolli")){
+      toppingsCost += toppingsSmall.brocolli;
+    }
+
+    totalCost = (pizzaPrices.medium + toppingsCost + deliveryCost) * quantity;
+  } else if (size == "large") {
+    if(toppings.includes("mushroom")){
+      toppingsCost += toppingsSmall.mushroom;
+    }
+    if(toppings.includes("bacon")){
+      toppingsCost += toppingsSmall.bacon;
+    }
+    if(toppings.includes("sausage")){
+      toppingsCost += toppingsSmall.sausage;
+    }
+    if(toppings.includes("brocolli")){
+      toppingsCost += toppingsSmall.brocolli;
+    }
+
+    totalCost = (pizzaPrices.large + toppingsCost + deliveryCost) * quantity;
+  } else {
+    alert("Please Choose a pizza size");
+  }
+
+  document.getElementById("totalCost").innerHTML = totalCost;
+  document.getElementById("toppingsCost").innerHTML = toppingsCost;
+  document.getElementById("deliveryCost").innerHTML = deliveryCost;
 });
