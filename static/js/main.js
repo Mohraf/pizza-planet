@@ -1,4 +1,4 @@
-const Order = (size, crust, toppings, quantity, deliveryCost) => {
+function Order (size, crust, toppings, quantity, deliveryCost) {
   this.size = size;
   this.crust = crust;
   this.toppings = toppings;
@@ -32,3 +32,23 @@ const pizzaPrices = {
   medium: 800,
   large: 1000
 };
+
+$("#submit").on('click', () => {
+  let size = $('#size').val();
+  let crust = $('#crust').val();
+  let toppings = $('#toppings').val();
+  let quantity = Number($('#quantity').val());
+  let delivery = $('#delivery').val();
+  let deliveryCost;
+
+  if (delivery != ""){
+    deliveryCost = 100;
+  }
+  else {
+    deliveryCost = 0;
+  }
+
+  let myOrder = new Order(size, crust, toppings, quantity, deliveryCost);
+
+  console.log(myOrder);
+});
