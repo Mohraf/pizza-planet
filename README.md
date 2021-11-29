@@ -6,7 +6,7 @@ The Website allows one to enter the size of Pizza, add toppings, input number of
 ## Setup/Installation Requirements
 * Clone the repository from github
 ```
-git clone https://github.com/Mohraf/akan-name-generator.git
+git clone https://github.com/Mohraf/pizza-planet.git
 ```
 * Open the project folder with your favorite IDE e.g https://code.visualstudio.com/
 * Run the index file with live server.
