@@ -14,7 +14,7 @@ git clone https://github.com/Mohraf/pizza-planet.git
 There are currently no bugs that have been experinced with the Website
 ## Live Site Link
 ```
-https://mohraf.github.io/akan-name-generator/
+https://mohraf.github.io/pizza-planet/
 ```
 ## Technologies Used
 - HTML
