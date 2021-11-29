@@ -1,5 +1,5 @@
 # Pizza Planet
-#### A Website to Order Pizza. Nov,2021
+#### A Website to Order Pizza. Nov, 2021
 #### By **Amos Okello**
 ## Description
 The Website allows one to enter the size of Pizza, add toppings, input number of pizzas and delivery location. It then calculates the Total Costs.
