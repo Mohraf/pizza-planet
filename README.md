@@ -17,8 +17,8 @@ There are currently no bugs that have been experinced with the Website
 https://mohraf.github.io/pizza-planet/
 ```
 ## Technologies Used
-- HTML
 - Bootstrap CSS
+-JQuery
 - JavaScript
 - Git
 ## Support and contact details
