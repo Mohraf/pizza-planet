@@ -68,7 +68,7 @@ $("#submit").on('click', () => {
       toppingsCost += toppingsSmall.brocolli;
     }
 
-    totalCost = (pizzaPrices.small + toppingsCost + deliveryCost) * quantity;
+    totalCost = (pizzaPrices.small * quantity) + (toppingsCost * quantity) + deliveryCost;
   } else if (size == "medium") {
     if(toppings.includes("mushroom")){
       toppingsCost += toppingsSmall.mushroom;
@@ -83,7 +83,7 @@ $("#submit").on('click', () => {
       toppingsCost += toppingsSmall.brocolli;
     }
 
-    totalCost = (pizzaPrices.medium + toppingsCost + deliveryCost) * quantity;
+    totalCost = (pizzaPrices.medium * quantity) + (toppingsCost * quantity) + deliveryCost;
   } else if (size == "large") {
     if(toppings.includes("mushroom")){
       toppingsCost += toppingsSmall.mushroom;
@@ -98,12 +98,12 @@ $("#submit").on('click', () => {
       toppingsCost += toppingsSmall.brocolli;
     }
 
-    totalCost = (pizzaPrices.large + toppingsCost + deliveryCost) * quantity;
+    totalCost = (pizzaPrices.large * quantity) + (toppingsCost * quantity) + deliveryCost;
   } else {
     alert("Please Choose a pizza size");
   }
 
   document.getElementById("totalCost").innerHTML = totalCost;
-  document.getElementById("toppingsCost").innerHTML = toppingsCost;
+  document.getElementById("toppingsCost").innerHTML = toppingsCost * quantity;
   document.getElementById("deliveryCost").innerHTML = deliveryCost;
 });
