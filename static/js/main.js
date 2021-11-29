@@ -54,7 +54,7 @@ $("#submit").on('click', () => {
 
   alert("You will be charged Ksh " + deliveryCost + " for Delivery");
 
-  if(size == "small") {
+  if(myOrder.size == "small") {
     if(toppings.includes("mushroom")){
       toppingsCost += toppingsSmall.mushroom;
     }
@@ -69,7 +69,7 @@ $("#submit").on('click', () => {
     }
 
     totalCost = (pizzaPrices.small * quantity) + (toppingsCost * quantity) + deliveryCost;
-  } else if (size == "medium") {
+  } else if (myOrder.size == "medium") {
     if(toppings.includes("mushroom")){
       toppingsCost += toppingsSmall.mushroom;
     }
@@ -84,7 +84,7 @@ $("#submit").on('click', () => {
     }
 
     totalCost = (pizzaPrices.medium * quantity) + (toppingsCost * quantity) + deliveryCost;
-  } else if (size == "large") {
+  } else if (myOrder.size == "large") {
     if(toppings.includes("mushroom")){
       toppingsCost += toppingsSmall.mushroom;
     }
