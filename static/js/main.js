@@ -41,7 +41,7 @@ $("#submit").on('click', () => {
   let delivery = $('#delivery').val();
   let deliveryCost;
   let toppingsCost = 0;
-  let totalCost;
+  let totalCost = 0;
 
   if (delivery !== ""){
     deliveryCost = 100;
